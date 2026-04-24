@@ -18,7 +18,8 @@ age = st.number_input("Age", min_value=0, max_value=100, value=25)
 sibspouse = st.number_input("Siblings/Spouse", min_value=0, max_value=10, value=0)
 parentchild = st.number_input("Parents/Children", min_value=0, max_value=10, value=0)
 fare = st.number_input("Fare", min_value=0.0, value=50.0)
-
+SURVIVAL_THRESHOLD = 0.5
+st.write("Survival Probability Threshold:", SURVIVAL_THRESHOLD)
 # Predict button
 if st.button("Predict"):
     
